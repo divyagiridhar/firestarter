@@ -1,0 +1,15 @@
+name: Build Image
+
+on: [push]
+
+jobs:
+  build:
+    name: Build image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Github repo
+        uses: actions/checkout@v3
+
+      - name: Build image
+        run: |
+          docker build -t example-react-app .

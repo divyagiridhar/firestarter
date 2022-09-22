@@ -1,0 +1,86 @@
+.App {
+  display: flex;
+}
+
+.App-body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Red Hat Display', serif;
+  height: 100%;
+  width: 100%;
+  padding-left: calc(10vmin);
+  padding-right: calc(10vmin);
+}
+
+.body-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.animation {
+  display: flex;
+  height: 100%;
+  margin-bottom: calc(8vmin);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  font-size: calc(3vw + 3vh + 2vmin);
+  margin-bottom: calc(10vmin);
+}
+
+.body {
+  display: flex;
+  font-size: calc(1vw + 1vh + 1vmin);
+  margin-bottom: calc(10vmin);
+}
+
+.github-link {
+  display: flex;
+  flex-direction: row;
+}
+
+.github-logo {
+  vertical-align: middle;
+  margin-right: calc(2vmin);
+  width: calc(8vmin);
+}
+
+.App-link {
+  color: white;
+  font-size: calc(1vw + 1vh + 2vmin);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 768px) {
+    .App-body {
+      flex-direction: column;
+    }
+
+  .body-column {
+    width: 100%;
+  }
+}
